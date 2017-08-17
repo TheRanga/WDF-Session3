@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS A3.4</title>
+        <style>
+            
+            body {
+                background-image: url("images/bgimg.jpg");
+            }
+
+            .sform {
+                border: 2px solid black;
+                padding: 1px 1px 15px 15px;
+                width: 400px;
+                
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Assignment 3.4-Forms</h1>
+
+        <div class="sform"><h2> Student Form</h2>
+        <form action="" method="POST">
+            <!-- Required attribute used in input fields-->
+            <table>
+                <tr><td><label for="first">First Name</label></td>
+                <td><input type="text" id="first" name="first" placeholder="Your first name.." required></td></tr>
+
+                <tr><td><label for="last">Last Name</label></td>
+                <!--Field diabled-->
+                <td><input type="text" id="last" name="last" placeholder="Your last name.." disabled></td></tr>
+                
+                <tr><td><label for="age">Age</label></td>
+                <!-- Min and Max attributes shown in the below code line--> 
+                <td><input type="number" id="age" name="age" placeholder="Your age.." min="5" max="35" required></td></tr>
+
+                <tr><td><label for="cont">Contact Number</label></td>
+                <td><input type="number" id="cont" name="cont" placeholder="Your  contact number.." required></td></tr>
+
+                <tr><td><label for="email">Email ID</label></td>
+                <td><input type="email" id="email" name="email" placeholder="Your email ID.." required></td></tr>
+                
+                <tr><td><label for="addr">Address</label></td>
+                <!--Min and Max length attribute shocased here-->
+                <td><input type="text" id="addr" name="addr" minlength="10" maxlength="200" placeholder="Residence address.." required></td></tr>
+                
+                <tr><td><label for="city">City</label></td>
+                <td><input type="c=text" id="city" name="city" placeholder="City of residence.." required></td></tr>
+
+                <tr><td><label for="pin">Pin Code</label></td>
+                <td><input type="text" id="pin" name="pin" placeholder="Residence pin code.." required></td></tr>
+                
+                <tr><td><label for="state">State</label></td>
+                <td><select id="state" name="state">
+                        <option value="tn">Tamil Nadu</option>
+                        <option value="kl">Kerala</option>
+                        <option value="ap">Andhra Pradesh</option>
+                </select></td></tr><br/><br/>
+            </table>
+            <!-- The submit button has been made transparent in below line. Multiple styles applied in single line-->
+            <input type="submit" style="background-color: transparent; padding:20px;">
+            
+        </form>
+        </div><br/><br/>
+        
+
+    </body>
+
+</html>
+
